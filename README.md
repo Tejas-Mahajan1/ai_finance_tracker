@@ -2,7 +2,6 @@
 
 **Next.js 14** application providing intelligent financial management with AI-powered insights, multi-account tracking, and real-time analytics.
 
-![Platform Dashboard](Hero5.png)
 
 ## 📖 Table of Contents
 - [Key Features](#-key-features)
