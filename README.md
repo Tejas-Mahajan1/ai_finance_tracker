@@ -2,7 +2,7 @@
 
 Next.js application for intelligent financial tracking with budget analytics, AI receipt scanning, and real-time insights.
 
-![App Banner](public/banner.jpeg)
+![App Banner](public/Hero5.png)
 
 ## ✨ Key Features
 
