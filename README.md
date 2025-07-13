@@ -1,89 +1,132 @@
-# AI-Powered Finance Management Platform
+# 🚀 AI-Powered Finance Management Platform [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Next.js application for intelligent financial tracking with budget analytics, AI receipt scanning, and real-time insights.
+**Next.js 14** application providing intelligent financial management with AI-powered insights, multi-account tracking, and real-time analytics.
+
+![Platform Dashboard](Hero5.png)
+
+## 📖 Table of Contents
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Project Structure](#-project-structure)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ![App Banner](public/Hero5.png)
 
 ## ✨ Key Features
 
-- **AI-Powered Insights**
-  - Receipt scanning using Google Gemini API
-  - Automated transaction categorization
-  - Smart budget predictions
-  - Real-time expense analysis
+- **🤖 AI Financial Insights**
+  - ✨ Receipt scanning with Google Gemini Vision API
+  - 🏷️ Automatic transaction categorization using ML models
+  - 📈 Predictive budget forecasting
+  - 🔍 Natural language query support
 
-- **Financial Tracking**
-  - Real-time expense monitoring
-  - Multi-account support
-  - Custom budget limits per category
-  - Historical spending analysis
-  - Transaction search and filtering
-  - Account-specific analytics and charts
+- **💸 Financial Management**
+  - 📊 Real-time dashboard with interactive charts
+  - 🏦 Multi-account aggregation & reconciliation
+  - 🎯 Customizable budget categories and limits
+  - 🔎 Advanced transaction search/filter
+  - 📆 Recurring expense detection
+  - ⏱️ Instant spending notifications
 
-- **Security & Reliability**
-  - Clerk authentication with JWT tokens
-  - Role-based access control (RBAC)
-  - Rate-limited APIs via ArcJet
-  - Background processing with Inngest
-  - Secure email notifications via Resend
+- **🔒 Enterprise Security**
+  - 🔑 Clerk authentication with JWT & MFA
+  - 🛡️ Role-based access control (RBAC)
+  - ⏲️ API rate limiting via ArcJet
+  - 🔄 Background processing with Inngest
+  - 📧 Secure notifications via Resend
+  - 🔐 End-to-end data encryption
 
-- **User Experience**
-  - Interactive dashboard with charts/graphs
-  - Shadcn UI component library
-  - Responsive mobile-first design
-  - Server-side rendering with Next.js
-  - Real-time notifications
-  - Dark/Light mode support
-  - Intuitive transaction management
+- **🎨 Premium UX**
+  - 📱 Mobile-first responsive design
+  - 🌓 Dark/light theme support
+  - ⚡ Instant search with debounced queries
+  - 📥 Bulk transaction imports (CSV/Excel)
+  - 🎛️ Customizable dashboard widgets
+  - 🔊 Sonner toast notifications
 
 ## 🛠 Tech Stack
 
-**Core Framework**  
-![Next.js](https://img.shields.io/badge/Next.js-14.0-black?logo=next.js)
-![React](https://img.shields.io/badge/React-18.0-%2361DAFB?logo=react)
+**Core Framework**
+[![Next.js](https://img.shields.io/badge/Next.js-14.0-black?logo=next.js)](https://nextjs.org)
+[![React 18](https://img.shields.io/badge/React-18.0-%2361DAFB?logo=react)](https://react.dev)
 
-**Database & ORM**  
-![Prisma](https://img.shields.io/badge/Prisma-ORM-%232D3748?logo=prisma)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.0-%234169E1?logo=postgresql)
+**Database**
+[![Prisma](https://img.shields.io/badge/Prisma-ORM-%232D3748?logo=prisma)](https://prisma.io)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.0-%234169E1?logo=postgresql)](https://postgresql.org)
 
-**Authentication & Security**  
-![Clerk](https://img.shields.io/badge/Clerk-Authentication-%23000000)
-![ArcJet](https://img.shields.io/badge/ArcJet-Rate_Limiting-%234F46E5)
+**Security**
+[![Clerk](https://img.shields.io/badge/Clerk-Auth-%23000000)](https://clerk.com)
+[![ArcJet](https://img.shields.io/badge/ArcJet-Rate_Limiting-%234F46E5)](https://arcjet.com)
 
-**Styling & UI**  
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-%2338B2AC?logo=tailwind-css)
-![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-0.5-%230F172A)
+**UI Components**
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-%2338B2AC?logo=tailwind-css)](https://tailwindcss.com)
+[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-0.5-%230F172A)](https://ui.shadcn.com)
 
-**AI & Email Services**  
-![Gemini](https://img.shields.io/badge/Google_Gemini-API-%23EA4335)
-![Resend](https://img.shields.io/badge/Resend-Email-%23000000)
+**AI Services**
+[![Gemini](https://img.shields.io/badge/Google_Gemini-API-%23EA4335)](https://ai.google.dev)
+[![Resend](https://img.shields.io/badge/Resend-Email-%23000000)](https://resend.com)
 
-**Task Processing**  
-![Inngest](https://img.shields.io/badge/Inngest-2.0-%23000?logo=inn)
+**Infrastructure**
+[![Inngest](https://img.shields.io/badge/Inngest-2.0-%23000)](https://inngest.com)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployment-%23000000)](https://vercel.com)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ & PostgreSQL 15+
-- Clerk account (for authentication)
-- Google Gemini API key
-- Resend API key (for email)
+- [Node.js 18+](https://nodejs.org) & [npm 9+](https://npmjs.com)
+- [PostgreSQL 15+](https://www.postgresql.org/download/)
+- [Clerk](https://clerk.com) account for authentication
+- [Google Gemini](https://ai.google.dev) API key
+- [Resend](https://resend.com) API key for email
 
 ### Initial Setup
-1. Clone repository:
 ```bash
+# Clone repository
 git clone https://github.com/your-repo/ai-finance-platform.git
 cd ai-finance-platform
-```
 
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
+
+# Setup environment
+cp .env.example .env.local
 ```
 
-3. Configure environment variables:
+### Configure Environment
+Edit `.env.local` with your credentials:
+```ini
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# Database
+DATABASE_URL="postgresql://user:pass@localhost:5432/ai_finance?schema=public"
+DIRECT_URL="postgresql://user:pass@localhost:5432/ai_finance"
+
+# AI Services
+GEMINI_API_KEY=your_google_ai_key
+
+# Email
+RESEND_API_KEY=your_resend_key
+
+# Security
+ARCJET_KEY=your_arcjet_key
+```
+
+### Database Setup
 ```bash
-cp .env.example .env.local
+# Run migrations
+npx prisma migrate dev --name init
+
+# Generate Prisma client
+npx prisma generate
+
+# Seed sample data (optional)
+npm run seed
 ```
 
 4. Database setup:
