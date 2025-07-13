@@ -6,12 +6,28 @@ Next.js application for intelligent financial tracking with budget analytics, AI
 
 ## ✨ Key Features
 
-- **AI Receipt Scanning** - Gemini API powered document analysis
-- **Budget Tracking** - Real-time expense categorization & monitoring
-- **Financial Dashboard** - Interactive visualization of spending patterns
-- **Secure Authentication** - Clerk integration with role-based access
-- **Background Processing** - Inngest for async transaction operations
-- **Rate Limited API** - ArcJet protection for critical endpoints
+- **AI-Powered Insights**
+  - Receipt scanning using Google Gemini API
+  - Automated transaction categorization
+  - Smart budget predictions
+
+- **Financial Tracking**
+  - Real-time expense monitoring
+  - Multi-account support
+  - Custom budget limits per category
+  - Historical spending analysis
+
+- **Security & Reliability**
+  - Clerk authentication with JWT tokens
+  - Role-based access control (RBAC)
+  - Rate-limited APIs via ArcJet
+  - Background processing with Inngest
+
+- **User Experience**
+  - Interactive dashboard with charts/graphs
+  - Shadcn UI component library
+  - Responsive mobile-first design
+  - Server-side rendering with Next.js
 
 ## 🛠 Tech Stack
 
@@ -37,16 +53,41 @@ Next.js application for intelligent financial tracking with budget analytics, AI
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
-- PostgreSQL
-- Clerk account
-- Gemini API key
+- Node.js 18+ & PostgreSQL 15+
+- Clerk account (for authentication)
+- Google Gemini API key
+- Resend API key (for email)
 
-### Installation
+### Initial Setup
+1. Clone repository:
 ```bash
 git clone https://github.com/your-repo/ai-finance-platform.git
 cd ai-finance-platform
+```
+
+2. Install dependencies:
+```bash
 npm install
+```
+
+3. Configure environment variables:
+```bash
+cp .env.example .env.local
+```
+
+4. Database setup:
+```bash
+npx prisma migrate dev --name init
+```
+
+5. Seed initial data (optional):
+```bash
+npm run seed
+```
+
+6. Start development server:
+```bash
+npm run dev
 ```
 
 ## 🔑 Environment Variables
@@ -73,5 +114,30 @@ Production build:
 npm run build && npm start
 ```
 
+## 🗂 Project Structure
+
+```
+ai-finance-platform/
+├── app/               # Next.js app router routes
+│   ├── (auth)/        # Authentication pages
+│   ├── (main)/        # Authenticated user routes
+│   ├── api/           # API endpoints
+│   └── lib/           # Shared utilities
+├── components/        # Reusable UI components
+├── hooks/             # Custom React hooks
+├── lib/               # Server-side libraries
+├── prisma/            # Database schema & migrations
+├── public/            # Static assets
+└── actions/           # Server actions
+```
+
 ## 📄 License
 MIT License - see [LICENSE](LICENSE) for details
+
+## 🤝 Contributing
+Contributions welcome! Please follow:
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
