@@ -10,45 +10,56 @@ Next.js application for intelligent financial tracking with budget analytics, AI
   - Receipt scanning using Google Gemini API
   - Automated transaction categorization
   - Smart budget predictions
+  - Real-time expense analysis
 
 - **Financial Tracking**
   - Real-time expense monitoring
   - Multi-account support
   - Custom budget limits per category
   - Historical spending analysis
+  - Transaction search and filtering
+  - Account-specific analytics and charts
 
 - **Security & Reliability**
   - Clerk authentication with JWT tokens
   - Role-based access control (RBAC)
   - Rate-limited APIs via ArcJet
   - Background processing with Inngest
+  - Secure email notifications via Resend
 
 - **User Experience**
   - Interactive dashboard with charts/graphs
   - Shadcn UI component library
   - Responsive mobile-first design
   - Server-side rendering with Next.js
+  - Real-time notifications
+  - Dark/Light mode support
+  - Intuitive transaction management
 
 ## 🛠 Tech Stack
 
 **Core Framework**  
 ![Next.js](https://img.shields.io/badge/Next.js-14.0-black?logo=next.js)
+![React](https://img.shields.io/badge/React-18.0-%2361DAFB?logo=react)
 
-**Database**  
+**Database & ORM**  
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-%232D3748?logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.0-%234169E1?logo=postgresql)
 
-**Styling**  
+**Authentication & Security**  
+![Clerk](https://img.shields.io/badge/Clerk-Authentication-%23000000)
+![ArcJet](https://img.shields.io/badge/ArcJet-Rate_Limiting-%234F46E5)
+
+**Styling & UI**  
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-%2338B2AC?logo=tailwind-css)
-
-**UI Components**  
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-0.5-%230F172A)
 
-**AI Services**  
+**AI & Email Services**  
 ![Gemini](https://img.shields.io/badge/Google_Gemini-API-%23EA4335)
+![Resend](https://img.shields.io/badge/Resend-Email-%23000000)
 
-**Infrastructure**  
-![Inngest](https://img.shields.io/badge/Inngest-2.0-%23000?logo=inn)  
-![ArcJet](https://img.shields.io/badge/ArcJet-Rate_Limiting-%234F46E5)
+**Task Processing**  
+![Inngest](https://img.shields.io/badge/Inngest-2.0-%23000?logo=inn)
 
 ## 🚀 Getting Started
 
