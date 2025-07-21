@@ -71,7 +71,6 @@ export function AddTransactionForm({
             accountId: accounts.find((ac) => ac.isDefault)?.id,
             date: new Date(),
             isRecurring: false,
-            category: null,
           },
   });
 
@@ -205,15 +204,9 @@ export function AddTransactionForm({
         <Select
           onValueChange={(value) => setValue("category", value)}
           defaultValue={getValues("category")}
-          value={getValues("category")}
         >
           <SelectTrigger>
-            <SelectValue>
-              {getValues("category") ? 
-                filteredCategories.find(cat => cat.id === getValues("category"))?.name : 
-                "Select category"
-              }
-            </SelectValue>
+            <SelectValue placeholder="Select category" />
           </SelectTrigger>
           <SelectContent>
             {filteredCategories.map((category) => (
