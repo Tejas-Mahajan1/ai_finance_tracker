@@ -128,8 +128,6 @@ export function AddTransactionForm({
     (category) => category.type === type
   );
 
-  console.log("Category",getValues("category"));
-
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Receipt Scanner - Only show in create mode */}
